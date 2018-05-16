@@ -33,6 +33,6 @@ gulp.task('js', () =>
         .pipe(gulp.dest('./dist/js'))
 );
 
-gulp.task('watch', function(){
+gulp.task('default', ['css', 'img', 'js'],function(){
     gulp.watch('./src/css/*.css', ['css']); 
 });
